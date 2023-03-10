@@ -1,11 +1,5 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import {
-    DialogTitle,
-    DialogContent,
-    TextField,
-    DialogActions,
-    Button,
-} from "@mui/material";
+import { TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { api } from "/resources/js/axios";
 import validations from "./validations";
@@ -16,9 +10,6 @@ export default function LoginForm({}) {
     const {
         register,
         handleSubmit,
-        setValue,
-        watch,
-        getValues,
         formState: { errors, isSubmitting },
     } = useForm({
         resolver: yupResolver(validations),

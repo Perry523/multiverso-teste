@@ -31,10 +31,6 @@ export default function RegisterForm({ onClose }) {
         <form onSubmit={handleSubmit(submitRegister)}>
             <DialogTitle className="text-center">Realizar Cadastro</DialogTitle>
             <DialogContent className="d-flex flex-col">
-                {/* <DialogContentText>
-        To subscribe to this website, please enter your email
-        address here. We will send updates occasionally.
-    </DialogContentText> */}
                 <div className="grid grid-cols-2 gap-3 my-3">
                     <TextField
                         label="Nome"
